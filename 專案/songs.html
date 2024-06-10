@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>韓文歌曲排行榜</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>韓國偶像和音樂網站</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">首頁</a></li>
+                <li><a href="idols.html">韓國偶像團體</a></li>
+                <li><a href="songs.html">韓文歌曲排行榜</a></li>
+                <li><a href="news.html">韓國娛樂新聞</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="songs">
+            <h2>韓文歌曲排行榜</h2>
+            <div id="songs-content">
+                <div class="song">
+                    <span class="rank">1.</span>
+                    <img src="01.jpg" alt="Magnetic">
+                    <div class="song-info"></div>
+                    <h3>Magnetic</h3>
+                    <p>表演者：ILLIT</p>
+                    <button class="play-btn" onclick="playMusic('Vk5-c_v4gMU')">播放</button>
+                </div>
+                
+                <div class="song">
+                    <span class="rank">2.</span>
+                    <img src="02.jpg" alt="SHEESH">
+                    <div class="song-info"></div>
+                    <h3>SHEESH</h3>
+                    <p>表演者：BABYMONSTER</p>
+                    <button class="play-btn" onclick="playMusic('2wA_b6YHjqQ')">播放</button>
+                </div>
+                <div class="song">
+                    <span class="rank">3.</span>
+                    <img src="03.jpg" alt="How Sweet">
+                    <div class="song-info"></div>
+                    <h3>How Sweet</h3>
+                    <p>表演者：NewJeans</p>
+                    <button class="play-btn" onclick="playMusic('Q3K0TOvTOno')">播放</button>
+                </div>
+                <div class="song">
+                    <span class="rank">4.</span>
+                    <img src="04.jpg" alt="Drama">
+                    <div class="song-info"></div>
+                    <h3>Drama</h3>
+                    <p>表演者：aespa</p>
+                    <button class="play-btn" onclick="playMusic('D8VEhcPeSlc')">播放</button>
+                </div>
+                <div class="song">
+                    <span class="rank">5.</span>
+                    <img src="05.jpg" alt="Smart">
+                    <div class="song-info"></div>
+                    <h3>Smart</h3>
+                    <p>表演者：LE SSERAFIM</p>
+                    <button class="play-btn" onclick="playMusic('KNexS61fjus')">播放</button>
+                </div>
+                <div class="song">
+                    <span class="rank">6.</span>
+                    <img src="06.jpg" alt="Seven">
+                    <div class="song-info"></div>
+                    <h3>Seven</h3>
+                    <p>表演者：Jung Kook</p>
+                    <button class="play-btn" onclick="playMusic('1QYBiNRu1ok')">播放</button>
+                </div>
+                <div class="song">
+                    <span class="rank">7.</span>
+                    <img src="07.jpg" alt="Pink Venom">
+                    <div class="song-info"></div>
+                    <h3>Pink Venom</h3>
+                    <p>表演者：BLACKPINK</p>
+                    <button class="play-btn" onclick="playMusic('gQlMMD8auMs')">播放</button>
+                </div>
+                <div class="song">
+                    <span class="rank">8.</span>
+                    <img src="08.jpg" alt="Fate">
+                    <div class="song-info"></div>
+                    <h3>Fate</h3>
+                    <p>表演者：(G)I-DLE</p>
+                    <button class="play-btn" onclick="playMusic('jT94GNyGFdc')">播放</button>
+                </div>
+                <div class="song">
+                    <span class="rank">9.</span>
+                    <img src="09.jpg" alt="HEYA">
+                    <div class="song-info"></div>
+                    <h3>HEYA</h3>
+                    <p>表演者：IVE</p>
+                    <button class="play-btn" onclick="playMusic('07EzMbVH3QE')">播放</button>
+                </div>
+                <div class="song">
+                    <span class="rank">10.</span>
+                    <img src="10.jpg" alt="DASH">
+                    <div class="song-info"></div>
+                    <h3>DASH</h3>
+                    <p>表演者：NMIXX</p>
+                    <button class="play-btn" onclick="playMusic('7UecFm_bSTU')">播放</button>
+                </div>
+            </div>            
+        </section>
+    </main>
+    
+    <script src="scripts.js"></script>
+    <script>
+        function playMusic(videoId) {
+            window.open("https://www.youtube.com/watch?v=" + videoId, "_blank");
+        }
+    </script>
+</body>
+</html>

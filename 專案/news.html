@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>韓國娛樂新聞</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>韓國偶像和音樂網站</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">首頁</a></li>
+                <li><a href="idols.html">韓國偶像團體</a></li>
+                <li><a href="songs.html">韓文歌曲排行榜</a></li>
+                <li><a href="news.html">韓國娛樂新聞</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="news">
+            <h2>韓國娛樂新聞</h2>
+            <div id="news-content">
+                <!-- 新聞內容將由 JavaScript 動態生成 -->
+            </div>
+            <div class="button-container">
+                <button id="refresh-btn">刷新</button>
+            </div>
+        </section>
+    </main>
+    
+    <script>
+        // 新聞內容數組
+        var newsContent = [
+            {
+                title: "每次回歸皆引發話題，現象級女團NewJeans如何從競爭激烈的韓國演藝圈殺出重圍？",
+                subtitle: "王牌製作人打造，引領新潮流    (內容取自於yahoo新聞)",
+                image: "new.jpg",
+                content: "橫掃獎項的怪物女團NewJeans其實2022年才出道，為HYBE（BTS公司）旗下廠牌ADOR推出的第一組團體，團名的寓意為一條永不過時的牛仔褲，她們的音樂伴隨在日常生活中，讓人充滿新意不會厭倦；亦有「New Genes」之意，從團體定位、歌曲概念、服裝造型全面創新，預告著新時代的來臨。出道作品即大獲成功，與幕後推手閔熙珍密不可分，身為前SM創意總監，被譽為「王牌製作人」的她，過往參與的熱門作品包括少女時代《Gee》、EXO《Growl》、SHINee《View》、 f(x)《4 Walls》等，獨特的理念令她成為KPOP界的傳奇人物，更是品質保證。因此，當閔熙珍離開SM娛樂，加入HYBE、成立子公司ADOR並宣佈親自打造新女團時，各界引頸期盼，而NewJeans也不負眾望，其復古卻帶著青春的Y2K風格、親民的鄰家女孩形象，深受許多粉絲喜愛。",
+                href: "https://tw.news.yahoo.com/%E6%AF%8F%E6%AC%A1%E5%9B%9E%E6%AD%B8%E7%9A%86%E5%BC%95%E7%99%BC%E8%A9%B1%E9%A1%8C-%E7%8F%BE%E8%B1%A1%E7%B4%9A%E5%A5%B3%E5%9C%98newjeans%E5%A6%82%E4%BD%95%E5%BE%9E%E7%AB%B6%E7%88%AD%E6%BF%80%E7%83%88%E7%9A%84%E9%9F%93%E5%9C%8B%E6%BC%94%E8%97%9D%E5%9C%88%E6%AE%BA%E5%87%BA%E9%87%8D%E5%9C%8D-103042022.html"
+            },
+            {
+                title: "網紅情侶因「TXT然竣」分手！男方堅持1原因 道歉也無法挽回",
+                subtitle: "TVBS新聞",
+                image: "new2.jpg",
+                content: "近日韓國娛樂圈因為一對網紅分手掀起軒然大波，知名韓國時尚品牌THUG CLUB的代表Cho Young Min，突然在IG上宣布與論及婚嫁的女友分手，並氣憤的曝光分手的真相，表示分手原因與TXT的成員然竣有關，消息一出立刻引起網友熱議。Cho Young Min近日在Instagram上分享了與前女友的對話截圖，曝光了兩人分手的真相，原來慧智誤將一段「TXT成員然竣」的影片傳給了Cho Young Min，並在影片中寫道「我愛你，然竣」，然而這一行為讓Cho Young Min感到無法接受，立刻回應道：「你都在跟朋友們說妳愛然竣嗎，老婆不要這樣了，這樣真的不對」，並氣憤的在限時動態中寫道：「我不需要會跟其他男人說我愛你的女人，我要求的是真摯而專一的戀愛」。在隨後更新的IG限時動態中，Cho Young Min進一步解釋了分手的原因，表示前女友的行為讓他感到不安和不滿，認為這根本是精神出軌，他強調：「為什麼要在IG發我的照片，背後卻跟朋友們說愛的是其他男人？我不認為她是能夠繼續走下去的人，所以我決定分手。」他更透露當晚因為心情鬱悶去了夜店。而同一時間女方，也在限時動態中對此事進行回應，確認兩人因為然竣而分手，她表示：「前任認為偶像也是異性，因而不高興，雖然我不能理解但我尊重他，因為他是我愛的人，我也真誠地向他道歉。」然而此時雙方已經到了論及婚嫁的階段，慧智透露這樣的分手理由還是讓她感到相當荒唐。",
+                href: "https://tw.news.yahoo.com/%E7%B6%B2%E7%B4%85%E6%83%85%E4%BE%B6%E5%9B%A0-txt%E7%84%B6%E7%AB%A3-%E5%88%86%E6%89%8B-%E7%94%B7%E6%96%B9%E5%A0%85%E6%8C%811%E5%8E%9F%E5%9B%A0-%E9%81%93%E6%AD%89%E4%B9%9F%E7%84%A1%E6%B3%95%E6%8C%BD%E5%9B%9E-135318132.html"
+             },
+             {
+                title: "韓版《那些年，我們一起追的女孩》B1A4振永搭檔TWICE多賢首次同框！人物定裝照喚回眾人的青春～",
+                subtitle: "KSD韓星網",
+                image: "new3.jpg",
+                content: "【多圖】韓國翻拍版台灣電影《那些年，我們一起追的女孩》公開了主人公的形象照，大家喜歡振永&多賢這個組合嗎？由B1A4鄭振永與TWICE金多賢合作的全新電影《那些年，我們一起追的女孩》公開了兩位主角的同框合照，也宣佈了將在本月正式開拍，令粉絲們期待不已。《那些年，我們一起追的女孩》講述18歲且不夠成熟的稚嫩少年－振宇（振永　飾），歷經無數日子才向善雅（多賢　飾）告白的初戀故事。",
+                href: "https://www.koreastardaily.com/tc/news/153635.html"
+             },
+             {
+                title: "aespa＆NewJeans舞蹈跳戰引熱議！Minji還把aespa的宣傳單貼在HYBE大樓裡，網：好奇房時爀的反應",
+                subtitle: "KSD韓星網",
+                image: "new5.jpg",
+                content: "日前，HYBE 娛樂和旗下廠牌 ADOR 代表閔熙珍之間的紛爭陷入混亂，閔熙珍在記者會上反駁 HYBE 對她的指控，還公開與房時爀之間的 KakaoTalk 對話，房時爀說：「妳可以把aespa 踩在腳下，對吧？」閔熙珍以「哈哈哈」回應對方的訊息，這也立即引發熱議。（＊相關新聞：aespa正面回應HYBE房時爀「可以把aespa踩在腳下嗎」：我們只會對自己的活動全力以赴，和NewJeans是好同事）而 aespa 和 NewJeans 在近期都發行新專輯，沒想到...8日她們在 SNS 公開〈Armageddon〉（Karina、Giselle、Minji、Haerin）和〈How Sweet〉（Hanni、Danielle、Winter、Ningning）舞蹈挑戰的影片，讓許多粉絲們都相當驚喜！",
+                href: "https://www.koreastardaily.com/tc/news/153629.html"
+             },
+             {
+                title: "所願《玩什麼好呢》跳GFRIEND名曲要落淚！劉在錫一句「好想念」是多少人心聲",
+                subtitle: "KSD韓星網",
+                image: "new4.jpg",
+                content: "玩什麼好呢》（玩甚麼好呢）最新一集EP.237再辦跳蚤市場，成員們紛紛打電話邀來藝人朋友，包括「垃圾大叔」金錫勛、電波商社、曹世鎬、SG Wannabe金容俊、After School出身周妍，最驚喜莫過於壓軸的GFRIEND隊長所願！所願和美珠過去因活動期重疊成為好友（雖然美珠自爆因為自己戀愛，兩人已一年沒見XD），美珠一通電話就召喚出所願，劉在錫、HAHA見到她都感到相當驚喜。「我真的很喜歡GFRIEND的歌。」劉在錫提出請求希望所願能跳GFRIEND名曲，所願雖表示3、4年沒跳了，身體還是存著記憶，一連跳了〈今天開始我們〉（2015）、〈時間流逝〉（2016）與〈玻璃珠〉（2015）。",
+                href: "https://www.koreastardaily.com/tc/news/153633.html",
+                youtubeLink: "https://youtu.be/6S1deEQzBgA?si=rG006pMAaBwMkc2o"
+            },
+            {
+                title: "【韓網熱門】邊佑錫最新公開理想型：「不講髒話的女生」",
+                subtitle: "KSD韓星網",
+                image: "new6.jpg",
+                content: "邊佑錫近日接受採訪表示很喜歡愛情喜劇，尤其喜歡《背著善宰跑》裡為對方傾註一切的愛情、就像《手札情緣》 裡的「諾亞」，實際上他自己也是用情很深的類型。 關於理想型，邊佑錫表示外形方面一直在變，最重要的是個性合拍、聊得來：「我有點像傻瓜，喜歡賢明的女生。」記者聽後笑出來，邊佑錫：「回答得太形式化了... 但真的是這樣，對話最重要。」 記者請他再說一點，邊佑錫思考了10秒：「我喜歡不說髒話的女人。 雖然內容有點搞笑，但我喜歡講話文雅的人。」",
+                href: "https://www.koreastardaily.com/tc/news/153546.html"
+             },
+             {
+                title: "EXO-CBX下午緊急召開記者會：揭發SM不當行為，要求三成員上繳個人活動收入10%",
+                subtitle: "KSD韓星網",
+                image: "new7.jpg",
+                content: "男團EXO小分隊CBX（CHEN、伯賢、Xiumin）在與SM娛樂公司（以下簡稱SM）的獨家合約到期後，一同簽約由伯賢創建的獨立廠牌INB100並展開個人活動，今日（10日）CBX方面突然宣佈將舉行緊急記者會，聲稱受到了SM的不當要求。據INB100公司透露，SM要求CBX「支付個人活動收入的10%」。 INB100表示，去年6月CBX與SM通過共同聲明解除了獨家合約並進行了法律訴訟，申請了公平交易委員會的調解。 當時雙方通過協商解決了這一事件，因為雙方都認為EXO正常活動比任何事情都重要。 根據當時的協定，藝人的個人活動和CBX的活動均由INB100負責。 然而，SM無視了協定的前提條件，要求他們支付個人活動收入的一部份。NB100稱：「我們已經提供了關於不公平行為的證據，但SM已經超過兩個月沒有回覆。 通過這次記者會，我們將揭露SM的不當行為」。此外，記者會將由INB100的母公司One Hundred的會長車家元、INB100的代表金東俊和律師李在學參加，將於本日下午4時（韓國當地時間）舉行。",
+                href: "https://www.koreastardaily.com/tc/news/153634.html"
+             },
+             {
+                title: "FTIsland前成員宋承炫完婚，自彈自唱祝歌♥ 鄭容和與郭東延出席，興奮模樣全都錄XD",
+                subtitle: "KSD韓星網",
+                image: "new8.jpg",
+                content: "除了演員金寶羅與導演趙巴倫舉行婚禮之外，FTIsland前成員宋承炫也與女友完成婚禮，CNBLUE鄭容和與演員郭東延到場祝賀。宋承炫2009年加入FTIsland以吉他手身分出道，樂團活動同時也演過音樂劇、話劇挑戰演技，2019年與公司FNC娛樂合約結束並退出FTIsland，入伍、退伍後2022年以BL劇《哦！我的助手大人》回歸且專注演戲，不過今年2月宣布退出演藝圈，不久更傳出6月結婚。宋承炫就在昨日完婚，婚禮上最特別的就是他一手包辦祝歌，自彈自唱MAKTUB經典歌曲〈Marry Me〉獻給新娘，這首歌他曾在與崔敏煥的台灣見面會上表演過。還有，他與新娘一同進場時，音樂竟是饒舌歌手JAY-Z的〈Empire State Of Mind〉（ft. Alicia Keys〉），他一度伸手嗨起來，見花瓣灑落還興奮轉圈，幸福模樣藏不住。",
+                href: "https://www.koreastardaily.com/tc/news/153630.html"
+             },
+
+        ];
+
+       // 函數：選擇一個隨機的新聞內容並插入到頁面中
+       function displayRandomNews() {
+            var randomIndex = Math.floor(Math.random() * newsContent.length);
+            var randomNews = newsContent[randomIndex];
+
+            var newsContentElement = document.getElementById("news-content");
+            newsContentElement.innerHTML = ''; // 清空現有內容
+            var newsArticleElement = document.createElement("div");
+            newsArticleElement.className = "news-article";
+            newsArticleElement.innerHTML = `
+                <h3>${randomNews.title}</h3>
+                <p>${randomNews.subtitle}</p>
+                <img src="${randomNews.image}" alt="News Image">
+                <p>${randomNews.content}</p>
+                <p><a href="${randomNews.href}" target="_blank">查看更多</a></p>
+                ${randomNews.youtubeLink ? `<p><a href="${randomNews.youtubeLink}" target="_blank">觀看 YouTube 影片</a></p>` : ''}
+            `;
+            newsContentElement.appendChild(newsArticleElement);
+        }
+
+        // 事件監聽器：當刷新按鈕被點擊時調用 displayRandomNews 函數
+        document.getElementById("refresh-btn").addEventListener("click", displayRandomNews);
+
+        // 頁面加載時調用 displayRandomNews 函數
+        window.onload = displayRandomNews;
+    </script>
+</body>
+</html>
